@@ -32,7 +32,7 @@ public class GuessTheNumber {
         System.out.print("Please enter your name: ");
         String name = scanner.nextLine().trim();
         
-        // Use a default name if the user doesn't enter anything
+ 
         if (name.isEmpty()) {
             name = "Player";
         }
@@ -89,10 +89,10 @@ public class GuessTheNumber {
             System.out.println("Round score: 0 points");
         }
         
-        // Display current total score
+     
         System.out.println("Current total score: " + totalScore + " points");
         
-        // Pause before the next round
+
         if (round < MAX_ROUNDS) {
             System.out.println("\nPress Enter to continue to the next round...");
             scanner.nextLine();
@@ -100,9 +100,7 @@ public class GuessTheNumber {
     }
     
     private static int calculateScore(int attemptsTaken) {
-        // Score calculation: The fewer attempts used, the higher the score
-        // If solved in 1 attempt: MAX_POINTS_PER_ROUND
-        // If solved in MAX_ATTEMPTS: MIN_SCORE_PER_ROUND (which is 10)
+       
         
         if (attemptsTaken == 0) {
             return MAX_POINTS_PER_ROUND;  // Perfect score for immediate guess
@@ -111,7 +109,6 @@ public class GuessTheNumber {
         int minScorePerRound = 10;
         int scoreRange = MAX_POINTS_PER_ROUND - minScorePerRound;
         
-        // Linear score calculation based on attempts taken
         return (int) (MAX_POINTS_PER_ROUND - ((double) attemptsTaken / MAX_ATTEMPTS) * scoreRange);
     }
     
