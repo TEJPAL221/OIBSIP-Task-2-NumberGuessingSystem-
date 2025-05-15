@@ -1,9 +1,9 @@
 # OIBSIP-Task-2-NumberGuessingSystem-
 # 🎯 Guess The Number – Java Game
 
-### 🧠 Developed by: [Your Name]  
+### 🧠 Developed by: Tejpal singh rathore
 ### 🏢 Internship: Oasis Infobyte – Java Development Internship  
-### 📅 Internship Duration: [Month, Year]
+
 
 ---
 
